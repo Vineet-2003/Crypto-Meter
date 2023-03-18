@@ -1,4 +1,4 @@
-import { Container, LinearProgress, Typography, useTheme, useMediaQuery } from '@mui/material';
+import { Container, LinearProgress, Typography} from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
@@ -49,6 +49,7 @@ function Coinpage() {
 
   useEffect(() => {
     fetchCoin();
+    // eslint-disable-next-line
   }, []);
 
   const classes = useStyles();
